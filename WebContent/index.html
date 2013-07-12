@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m,sap.me,sap.ui.commons"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+				sap.ui.localResources("view");
+				sap.ui.localResources("util");
+				sap.ui.localResources("model");
+				
+				jQuery.sap.registerModulePath('Application','Application');
+				jQuery.sap.require('Application');
+				
+				var oApp = new Application({root:'content'});
+				
+				/*
+				var app = new sap.m.App({initialPage:"idApp1"});
+				var page = sap.ui.view({id:"idApp1", viewName:"sapui5poc1.view.App", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content");*/
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

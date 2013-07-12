@@ -1,0 +1,23 @@
+
+<template data-controller-name="view.Home">
+	<div data-sap-ui-type="sap.m.Page" data-title="Inbox" class="sapMPageHideHeaderWhenShellHeader" data-enable-scrolling="false">
+		<div data-sap-ui-type="sap.m.TileContainer">
+			<div data-sap-ui-aggregation="tiles">
+				<div data-sap-ui-type="sap.m.StandardTile" 
+					data-title="Approve work items" 
+					data-number="2"
+					data-number-unit="Approvals"
+					data-icon="sap-icon://inbox"
+					data-press="doNavApproveWorkItems" >
+				</div>
+				<div data-sap-ui-type="sap.m.StandardTile" 
+					data-icon="sap-icon://create-entry-time"
+					data-title="Perform time writing" 
+					data-number="3"
+					data-number-unit="days missing"
+					data-press="doNavPerformTimeWriting"> 
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
